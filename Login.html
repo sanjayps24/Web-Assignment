@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <style>
+        .login{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h2{
+             text-align: center; 
+            align-items:center;
+            justify-content: center;
+            text-decoration: underline; 
+
+        }
+        /* fieldset button{ 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        } */
+    </style>
+</head>
+<body>
+    <h2>Enter your Details to Login</h2>
+    <form class="login">
+        <fieldset>
+            <label for="user">Username : </label>
+            <input type="text" id="user" name="username" placeholder="Enter your user name" required>
+            <br><br>
+        
+            <!-- Here we are using the input type as password so that the password is not visible to others -->
+            <!-- we use for and id to associate or establish connection between the label and the input field -->
+            <label for="pwd" > Password : </label>
+            <input type="password" id="pwd" name="password" placeholder="Enter your password" required>
+            <br><br>
+
+            <label for="email">Email : </label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+
+            <!-- //tel is type of input which is used to take phone number as input from the user -->
+            <label for="phoneNO">Phone : </label>
+            <input type="tel" id="phoneNO" name="phone" placeholder="Enter your phone number" min="10" max="10" required>
+
+            
+
+            <button>Submit!</button>
+            <button>Close</button>
+
+        </fieldset>
+    </form>        
+</body>
+</html>
