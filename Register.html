@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <style>
+        .container{
+            /* height: 600px; */
+            /* width: 1320px; */
+            display:flex;
+            text-align: center;
+            justify-content: center;
+        }
+        button{
+            text-align: center;
+            justify-content: center;
+            height: 35px;
+            width: 100px;
+            border-radius: 25px;
+        }
+        button:hover{
+            border-bottom: 3px solid black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-decoration: underline; text-align: center;">Enter Your Details</h2>
+    <form class="container">
+        <fieldset>
+            <label for="user">Username : </label>
+            <input type="text" id="user" name="username" placeholder="Enter your user name" required>
+            <br><br>
+        
+            <!-- Here we are using the input type as password so that the password is not visible to others -->
+            <!-- we use for and id to associate or establish connection between the label and the input field -->
+            <label for="pwd" > Create Password : </label>
+            <input type="password" id="pwd" name="password" placeholder="Enter your password" required>
+            <br><br>
+
+            <label for="email">Email : </label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+
+            <!-- //tel is type of input which is used to take phone number as input from the user -->
+            <label for="phoneNO">Phone : </label>
+            <input type="tel" id="phoneNO" name="phone" placeholder="Enter your phone number" min="10" max="10" required>
+            <br><br>
+                    
+            <!-- //datetime-local is used to take date and time as input from the user -->
+            <label for="dob">Date of Birth : </label>
+            <input type="datetime-local" id="dob" name="dob" required>
+            <br><br>
+
+            <label for="age">Age : </label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" min="18" max="60" required>
+            <br><br>
+
+            <label for="gender">Gender : </label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <br><br>   
+
+            <!-- //textarea is used to take input from the user in multiple lines -->
+            <label for="address">Enter your Address : </label>
+            <textarea></textarea>
+            <br><br>
+
+            <!-- <label for="skills">Skills : </label>
+            <input type="checkbox" id="skills" name="skills" value="programming" checked>
+            <label for="skills">Programming</label>
+            <input type="checkbox" id="skills2" name="skills" value="design" >
+            <label for="skills2">Design</label>
+            <input type="checkbox" id="skills3" name="skills" value="management">
+            <label for="skills3">Management</label>
+            <br><br> -->
+
+            <label for="" >Choose your country : </label>
+            <select name="country" id="country" required>
+                <option value="">Select your country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Canada">Canada</option>
+            </select>
+            <br><br>    
+
+            <!-- <label type="range" for="range">Choose your range : </label>
+            <input type="range" id="range" name="range" min="1" max="100">
+            <input type="color" id="color" name="color">
+            <input type="search" id="search" name="search" placeholder="Search here">
+            <input type="url" name="" id="" placeholder="Enter your website url">
+            <br><br> -->
+
+
+            <label for="file">Upload your file : </label>
+            <input type="file" id="file" name="file" >
+            <br><br>
+            <br>
+
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I accept the terms and conditions</label>
+            <br><br>
+        
+            <button>Submit!</button>
+            <button>Close</button>
+
+        </fieldset>
+    </form>
+</body>
+</html>
