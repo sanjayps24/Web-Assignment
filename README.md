@@ -1,2 +1,2 @@
-# Web-Assignment
-## Simple User Interface(UI) Using Front End Technologies
+# 💻Web-Assignment
+## Sample User Interface(UI) Using Front End Technologies
